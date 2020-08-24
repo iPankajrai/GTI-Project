@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+  <!-- Bootstrap CSS file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- Custom CSS file -->
+  <link type="text/css" rel="stylesheet" href="project1.css">
+
+</head>
+
+
+<!-- =============================================Start BODY Area========================================================== -->
+
+<body>
+
+  <!-- ================Start Header Area================= -->
+  <header class="header_area">
+    <div class="navbar_menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm bg-white rounded" id="mainNav">
+        <a class="navbar-brand" href="#"><img src="logo.png" style="max-width:150px"></a>
+        <!--left logo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon"></i>
+          </span>
+          <!--right toggle button-->
+        </button>
+        <!--this div is used to make the navbar links in center-->
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse navbar1 in" id="navbarTogglerDemo02" aria-expanded="true">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menubar1">
+            <li class="nav-item active">
+              <a class="nav-link navbar_link" href="#">Explore <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navbar_link" href="#">Events</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navbar_link" href="#">Articles</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navbar_link" href="#">About GTI^TM</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navbar_link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="btn_sign">
+            <a class="btn btn_signup" href="#" role="button">Sign Up</a>
+            <a class="btn btn_signin" href="#" role="button">Sign In</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ================End Header Area================= -->
+
+
+  <!-- ================Start Main Area================= -->
+  <div class="container mycontainer">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- div for tabs start here-->
+        <div class="mytabs" id="mytabs">
+          <ul class="nav nav-tabs insideMyTabs">
+            <div id="tab_personal_details">
+            <li class="active list_insideMyTabs" > 
+              <a style="text-decoration: none;" href="#tab_default_1" data-toggle="tab">
+                <div class="details_box">
+                  <label for="circle" id="span_circle" style="background-color: #00f999;"><span>1</span></label><br>
+                  <p class="list_in_p1">PERSIONAL DETAILS</p>
+                </div>
+              </a>
+            </li>
+          </div>
+          <div id="tab_company_details">
+            <li class="active list_insideMyTabs"  >
+              <a style="text-decoration: none;" href="#tab_default_2" data-toggle="tab">
+                <div class="details_box">
+                  <label for="circle" id="span_circle" style="background-color: #7f7f7f;"><span>2</span></label><br>
+                  <p class="list_in_p">COMPANY DETAILS</p>
+                </div>
+              </a>
+            </li>
+          </div>
+          <div id="tab_product_details">
+            <li class="active list_insideMyTabs" >
+              <a style="text-decoration: none;" href="#tab_default_3" data-toggle="tab">
+                <div class="details_box">
+                  <label for="circle" id="span_circle" style="background-color: #7f7f7f;"><span>3</span></label><br>
+                  <P class="list_in_p">PRODUCT / OPPORTUNITY</P>
+                </div>
+              </a>
+            </li>
+          </div>
+          </ul>
+        </div>
+        <!-- div for tabs ends here-->
+
+        <!--tab content-->
+        <div class="tab-content myTabContent">
+        <!-- <form action="project1.php" method="POST" name = "user_form" id="user_form"> -->
+          <!-- ================ TAB 1 ==================-->
+          <div class="tab-pane active" id="tab_default_1">
+            <!--  onsubmit="return validate();" -->
+            <form action="project1.php" method="POST" name="personaldetails" id="personaldetails">
+              <div class="text-selection text-left form-group no-border">
+                <label for class="label">
+                  *Are you a tech displayer/scouter or general subscriber? choose one.
+                </label>
+                <!-- below div gives link (a) for the user type -->
+                <div class="d-inline-flex" style="width:100%;">
+                  <ul id="menu_personaldetails" class="list-inline-mb-0">
+                    <li class="active list-inline-item" id="click_displayer">
+                      <div class="tech-box">
+                        <img src="displayer.png" alt="displayer" width="50px;">
+                        <span>
+                          <a href="#" style="text-decoration: none; color: #7f7f7f; font-weight: bold;"
+                            title="showcase your technology requirements or opportunities">Displayer</a>
+                        </span>
+                        <!-- for vertical line between the elements -->
+                        <div class="vertical vl1"></div>
+                      </div>
+                    </li>
+                    <li class="active list-inline-item" id="click_scouter">
+                      <div class="tech-box">
+                        <img src="scouter.png" alt="scouter" width="50px;">
+                        <span>
+                          <a href="#" style="text-decoration: none; color: #7f7f7f; font-weight: bold;"
+                            title="showcase your technology requirements or opportunities">Scouter</a>
+                        </span>
+                        <!-- for vertical line between the elements -->
+                        <div class="vertical vl2"></div>
+                      </div>
+                    </li>
+                    <li class="active list-inline-item" id="click_guest">
+                      <div class="tech-box">
+                        <img src="guest.png" alt="guest" width="50px;">
+                        <span>
+                          <a href="#" style="text-decoration: none; color: #7f7f7f; font-weight: bold;"
+                            title="showcase your technology requirements or opportunities">General subscriber</a>
+                        </span>
+                        <!-- <input type="radio" class="hide" name="technology" value="guest" checked> -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--  other details for the tab1 -->
+              <div class="form-group">
+                <!--::before -->
+                <label class="label">*Company name / Institute / Organization </label>
+                <input type="name" name="company_name" id="company_name" autocomplete="on"
+                  class="form-control contactId" data-placeholder="Business / Individual">
+                <p id="comp_para_id" style="color: red;"></p>
+                <!--::after -->
+              </div>
+              <div class="form-group">
+                <!--::before -->
+                <label class="label">*Contact Name </label>
+                <input type="name" name="contact_name" id="contact_name" autocomplete="on"
+                  class="form-control contactId" data-placeholder="Contact name">
+                <p id="cont_para_id" style="color: red;"></p>
+                <!--::after -->
+              </div>
+              <div class="form-group">
+                <!--::before -->
+                <label class="label">*Email </label>
+                <input type="name" name="email" id="email" autocomplete="on" class="form-control contactId"
+                  data-placeholder="Email">
+                <p id="email_para_id" style="color: red;"></p>
+                <!--::after -->
+              </div>
+              <div class="form-group">
+                <!--::before -->
+                <label class="label">*Phone </label>
+                <input type="name" name="phone" id="phone" autocomplete="on" class="form-control contactId"
+                  data-placeholder="Phone">
+                <p id="phone_para_id" style="color: red;"></p>
+                <!--::after -->
+              </div>
+              <div class="form-group">
+                <!--::before -->
+                <label class="label">Reference Name </label>
+                <input type="name" name="reference_name" id="reference_name" autocomplete="on" class="form-control"
+                  data-placeholder="Reference Name">
+                <!--::after -->
+              </div>
+              <div class="form-group">
+                <!--::before -->
+                <label class="label">Reference Number </label>
+                <input type="name" name="reference_number" id="reference_number" autocomplete="on" class="form-control"
+                  data-placeholder="Reference Number">
+                <!--::after -->
+              </div>
+
+              <ul class="btn_backgr">
+                <li class="btn1_backgr d-inline">
+                  <input type="radio" name="termsNconditions" id="a-option">
+                  <label for="a-option">I accept <a target="_blank" href=""
+                      style="text-decoration: underline; color: blue;">Terms and conditions of GTI</a></label>
+                  <p id="radio_para_id" style="color: red;"></p>
+                  <div calss="check">
+                    <!--::before -->
+                  </div>
+                </li>
+              </ul>
+              <button type="button" id="btn_register" class="btn btn_register">Next</button>
+            </form>
+          </div>
+
+          <!-- ==================== TAB 2 ======================-->
+          <div class="tab-pane" id="tab_default_2">
+            <div class="company-details tab registration-tab active" id="my_id" data-tab="company-details">
+              <div calss="col-xs-12 col-lg-9 col-md-10 col-sm-12 margin-zeroAuto float-none">
+                <form action="project1.php" name="contactdetails" id="contactdetails">
+                  <div class="form-group upload no-border text-left">
+                    <!-- company logo file  -->
+                    <label for="company_logo" class="label">Upload Company Logo</label>
+                    <div class="file-upload-wrapper">
+                      <input type="file" name="company_logo" id="file">
+                      <label for="file" style="font-weight: bold;"><img src="file-upload.png" alt="file-upload">
+                        UploadOr click and drag</label>
+                    </div>
+                  </div>
+                  <div class="form-group dis_player_hide_for_scouter">
+                    <label for="company_info" class="label">*Company Description</label>
+                    <textarea name="companyinfo" id="companyinfo" cols="30" rows="2" class="form-control"
+                      autocomplete="on" data-placeholder="Company-info" style="overflow: hidden;"></textarea>
+                    <p id="cinfo_para_id" style="color: red;"></p>
+                  </div>
+                  <div class="form-group dis_player_hide_for_scouter">
+                    <label for="company_info" class="label">*Company Address</label>
+                    <textarea name="companyaddress" id="companyaddress" cols="30" rows="2" class="form-control"
+                      autocomplete="on" data-placeholder="Company-address" style="overflow: hidden;"></textarea>
+                    <p id="caddr_para_id" style="color: red;"></p>
+                  </div>
+
+                  <!-- ================= SELECT COUNTRY====================-->
+                  <div class="form-group hide_for_scouter" style="margin-top: 1em;">
+                    <label for="country" class="label">*Country</label>
+                    <div class="btn-group bootstrap-select form-control" style="border: none;">
+                      <!-- <button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" title="Select your Country">
+                            <span class="filter-option pull-left">Select your Country </span>
+                            &nbsp;
+                            <span class="bs-caret">
+                              <span class="caret"></span>
+                            </span>
+                          </button>
+                          <div class="dropdown-menu open" role="combobox">
+                            <ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
+                              <li data-original-index="0" class="disabled selected">
+                                <a href="#" tabindex="-1" class data-tokens="null" role="option" aria-disabled="true" aria-selected="true">
+                                  <span class="text">Select your Country</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="1">
+                                <a href="#" tabindex="0" class="2" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">Afghanistan</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="2">
+                                <a href="#" tabindex="0" class="2" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">Albania</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="3">
+                                <a href="#" tabindex="0" class="2" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">Algeria</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="4">
+                                <a href="#" tabindex="0" class="2" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">American Samoa</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+
+                              =======and the list of country goes to 245======== -->
+
+                      <!-- </ul>
+                          </div> -->
+                      <select name="country_id" id="country_id" class="form-control selectpicker" required
+                        aria-required="true" tabindex="-98">
+                        <option value="" selected="true" disabled="disabled">Select your country</option>
+                        <option value="1" class="2">Afghanistan</option>
+                        <option value="2" class="2">Albania</option>
+                        <option value="3" class="2">Algeria</option>
+                        <option value="4" class="2">American</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia, Plurinational State of</option>
+                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, the Democratic Republic of the</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Côte d'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Curaçao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard Island and McDonald Islands</option>
+                        <option value="VA">Holy See (Vatican City State)</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KR">Korea, Republic of</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Moldova, Republic of</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territory, Occupied</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RE">Réunion</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian Federation</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="BL">Saint Barthélemy</option>
+                        <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin (French part)</option>
+                        <option value="PM">Saint Pierre and Miquelon</option>
+                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten (Dutch part)</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard and Jan Mayen</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syrian Arab Republic</option>
+                        <option value="TW">Taiwan, Province of China</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania, United Republic of</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UM">United States Minor Outlying Islands</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela, Bolivarian Republic of</option>
+                        <option value="VN">Viet Nam</option>
+                        <option value="VG">Virgin Islands, British</option>
+                        <option value="VI">Virgin Islands, U.S.</option>
+                        <option value="WF">Wallis and Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                      </select>
+                    </div>
+                    <hr>
+                    <p id="cselect_para_id" style="color: red;"></p>
+                  </div>
+
+                  <!-- =================Sector type =======================-->
+                  <div class="form-group" style="margin-top: -10px;">
+                    <label class="label" for="sector">Sector Type</label>
+                    <div class="btn-group bootstrap-select form-control" style="border: none;">
+                      <!-- <button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="click_pro_sec_typ" title="Select your Sector">
+                            <span class="filter-option pull-left">Select your Sector</span>
+                            &nbsp;
+                            <span class="bs-caret">
+                              <span class="caret"></span>
+                            </span>
+                          </button> -->
+                      <!-- <div class="dropdown-menu open" role="combobox">
+                            <ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
+                              <li data-original-index="0" class="disabled selected">
+                                <a href="#" tabindex="-1" class data-tokens="null" role="option" aria-disabled="true" aria-selected="true">
+                                  <span class="text">Select your Sector</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="1">
+                                <a href="#" tabindex="0" class="2" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">Biotechnology</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="2">
+                                <a href="#" tabindex="0" class="click_cleantech" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">Clean technology Industry and services</span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                              <li data-original-index="3">
+                                <a href="#" tabindex="0" class="click_info" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                                  <span class="text">Informations and Communications Technology (ICT) </span>
+                                  <span class="glyphicon glyphicon-ok check-mark"></span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div> -->
+                      <select name="sectortype" id="click_pro_sec_typ" class="form-control selectpicker" required
+                        aria-required="true" tabindex="-98">
+                        <option value selected="true" disabled="disabled">Select your Sector</option>
+                        <option value="2" class="2">Biotechnology</option>
+                        <option value="1" class="click_cleantech">Clean Technology Industry and Services</option>
+                        <option value="3" class="click_info">Informations and Communications Technology (ICT) </option>
+                      </select>
+                    </div>
+                    <hr>
+                  </div>
+
+                  <!-- --------sub sector type------------ -->
+                  <div class="form-group" style="margin-top: 10px;">
+                    <label class="label" for="subsector">*Sub Sector Type</label>
+                    <div class="btn-group bootstrap-select form-control" style="border: none;">
+                      <!-- <button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="click_pro_sub_sec_typ" title="Select your Sub Sector">
+                            <span class="filter-option pull-left">Select your Sub Sector</span>
+                            &nbsp;
+                            <span class="bs-caret">
+                              <span class="caret"></span>
+                            </span>
+                          </button> -->
+                      <!-- <div class="form-group other_details" style="display: none;">
+                            <textarea class="form-control" name="others_details" cols="30" rows="1" autocomplete="on" style="overflow:hidden"></textarea>
+                          </div> -->
+                      <select name="subsectortype" id="subsector" class="form-control" required aria-required="true">
+                        <option value="" style="font-weight:lighter;">Select your Sub Sector</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                      </select>
+                    </div>
+                    <hr>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+            <p>
+              <button type="submit" class="btn btn_next" role="button" target="" id="btn_next2"
+                onclick="return customValidate2();">Next</button>
+              <button type="submit" class="btn btn_save" id="btn_save2" href="#" role="button" target="">Save</button>
+            </p>
+          </div>
+          <!-- ==================== TAB 3 ======================-->
+          <div class="tab-pane" id="tab_default_3">
+            <div class="product_opportunity tab registration-tab active" id="product" data-tab="product_opportunity">
+              <div calss="col-xs-12 col-lg-9 col-md-10 col-sm-12 margin-zero Auto float-none">
+                <form action="project1.php" method="POST" name="product_opportunity" id="product_opportunity">
+                  <div class="form-group upload no-border text-left">
+                  <label for="product_opportunity" class="label">Upload Product Image</label>
+                  <div class="file-upload product_opportunity">
+                    <input type="file" id="file" name="product_image">
+                  <label for="file" style="font-weight: bold;"><img src="file-upload.png" alt="file-upload "> Upload Or click and drag</label>
+                  <p id="file_para_id " style="color: red; "></p>
+              </div>
+              <!-- <div class="file-upload-wrapper ">
+                          <input type="file " id="input-file-now " class="file-upload " />
+                        </div> -->
+              <div class="output " id="output3 "></div>
+            </div>
+            <div class="form-group ">
+              <label for="product_opportunity " class="label ">*Product Name</label>
+              <textarea name="product_name " id="product_name " cols="30 " rows="2 " class="form-control "
+                autocomplete="on " data-placeholder="product_name " style="overflow: hidden; ">
+                    </textarea>
+              <p id="pname_para_id " style="color: red; "></p>
+            </div>
+            <div class="form-group ">
+              <label for="product_description " class="label ">*product_description</label>
+              <textarea name="product_description " id="product_description " cols="30 " rows="2 " class="form-control "
+                autocomplete="on " data-placeholder="product_description " style="overflow: hidden; ">
+                    </textarea>
+              <p id="pdesc_para_id " style="color: red; "></p>
+            </div>
+            <button id="btn_complete" type="submit " class="btn btn_complete" href="" target="_blank">Complete</button>
+            </form>
+          </div>
+        <!-- </form> -->
+        </div>
+      </div>
+    </div>
+    <!-- tab-content div ENDS here-->
+  </div>
+  </div>
+  </div>
+  <!-- ================End Main Area================= -->
+  
+  <!-- ================Start Footer Area================= -->
+  <footer class="page-footer row " id="footer ">
+    <div class="col-lg-12 footer_div ">
+      <div class="footer-copyright text-center ">
+        <a style="text-decoration: none; " href=" ">2020 Copyright: ©Copyright 2017 Global Business Inroads
+          International
+          Business Consultants Pvt Ltd</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ================End Footer Area================= -->
+
+</body>
+
+<!-- Jquery JS file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS file -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- JS file -->
+<script src="project1.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // $(".nav-tabs li").click(function(){
+    //     $(this).tab('show');
+    //     $(this).css("border-bottom" , "2px solid red");
+    //     alert(this);
+    // });
+    //  WORKS ONLY ONCE (NOT FOR MORE THAN ONE CLICK)
+  
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var target = $(e.target).attr("href") // activated tab 
+        if(target == "#tab_default_1"){
+          target = "#tab_personal_details";
+        }
+        else if(target == "#tab_default_2"){
+          target = "#tab_company_details";
+        }
+        else if(target == "#tab_default_3"){
+          target = "#tab_product_details";
+        }
+        alert(target);
+        $(target).css("border-bottom" , "2px solid red");
+        target ="";       
+      });
+    //writing separate code for each tab because we have separate validation function
+    $('#btn_register').click(function (e) {
+      e.preventDefault();
+      if(customValidate() == true){
+        console.log("inside jquery for switch tabs");
+        $('#mytabs a[href="#tab_default_2"]').tab('show');
+        // $('#tab_product_details').css("border-bottom" , "transparent");
+        // $('#tab_company_details').css("border-bottom" , "2px solid #7f7f7f");
+      }
+    });
+
+    $('#btn_next2').click(function (e) {
+      e.preventDefault();
+      if(customValidate2() == true){
+        $('#mytabs a[href="#tab_default_3"]').tab('show');
+        // $('#tab_company_details').css("border-bottom" , "transparent");
+        // $('#tab_product_details').css("border-bottom" , "2px solid #7f7f7f");
+      }
+    });
+
+    var form=$("#product_opportunity");
+    $("#btn_complete").on(click , function(){
+      //validate the form first and then process for serialize array data for form values
+      if(customValidate3() == true){
+        $.ajax({
+            type:"POST",
+            url:"http://localhost/LearningPHP1/Project1_htmlcss/project1.php",
+            data:form.serializeArray(),   //serialize(), serializeArray(), serializeObject()
+            success: function(response){
+                console.log('success', data); 
+            }
+        });
+      }
+    });
+    
+  });
+</script>
+
+
+
+</html>
+
+
+
+<!-- https://jqueryvalidation.org/     for jquery validaiton plugins based methods -->

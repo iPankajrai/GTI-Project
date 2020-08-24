@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* .nav > li > a.active { border-bottom: 10px solid #5bc0eb;} */
+
+body {
+    font-family: lato, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 13px;
+    width: 99%;
+    background-color: #f5f5f5;
+}
+
+#mainNav .navbar1 {
+    color: #0e1d52;
+    min-height: 70px;
+    background: #fff;
+    box-shadow: none;
+    opacity: 100%;
+    padding: 10px 20px 20px 10px;
+}
+
+
+/* .menubar1{
+  min-height: 70px !important;
+  background: #ff5;
+  box-shadow: none;
+  opacity: 100%;
+} */
+
+.navbar_menu {
+    height: 100px;
+    padding-bottom: 0px;
+}
+
+.navbar_link {
+    color: #0e1d52;
+}
+
+.navbar-toggler-icon {
+    width: 22px;
+    height: 20px;
+    border-radius: 1px;
+}
+
+
+/* to change the  BG color of toggler when active --> */
+
+
+/* .navbar-toggler> .active > i{ 
+  background-color: #888 ;                
+  border: none; 
+} */
+
+.btn_signup {
+    color: #fff;
+    background-color: #0e1d52;
+    letter-spacing: 0.05em;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    height: 34px;
+    margin-top: 0px;
+    margin-right: -15px;
+    font-size: 13px;
+    width: 85px;
+}
+
+.btn_signin {
+    color: #0e1d52;
+    background-color: #fff;
+    letter-spacing: 0.05em;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    height: 32px;
+    margin-top: -5px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+
+/* main container for all the contents of body */
+
+.mycontainer {
+    background: #fff;
+    margin-bottom: 20%;
+    padding: 2% 12% 5% 12%;
+}
+
+
+/* For the heading of the 3 tabs (without tab contents) (can be checked by changing background color to it) */
+
+.mytabs {
+    position: relative;
+    background: #fff;
+    padding: 0% 1% 0% 1%;
+    line-height: 25px;
+    display: flex;
+    /* establish flex container */
+    flex-wrap: row;
+    flex-direction: row-reverse;
+    /* stack flex items horizontally */
+    justify-content: space-around;
+    /* center items vertically, in this case */
+    align-items: flex-end;
+    /* center items horizontally, in this case */
+    margin-top: -15px;
+}
+
+
+/* .details_box separates each tab */
+
+.details_box {
+    width: 257px;
+    margin: 1px;
+    text-align: center;
+}
+
+
+/* below piece of code is used for underline border for each tabs in active state */
+
+
+/* ???????????????? this FOCUS ISN'T WORKING?????????????????????? */
+.list_insideMyTabs:active,
+.list_insideMyTabs:hover,
+.list_insideMyTabs:focus{
+    border-bottom: 2px solid #7f7f7f;
+}
+
+.insideMyTabs {
+    width: 100%;
+    height: 100%;
+    background: white;
+    text-align: center;
+    text-overflow: clip;
+    padding: 1% 1% 0% 1%;
+}
+
+.list_in_p1 {
+    color: #00f999;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding-bottom: 0px;
+}
+
+.list_in_p {
+    color: #7f7f7f;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+#span_circle {
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+}
+
+.myTabContent {
+    background: #fff;
+    font-weight: 500px;
+    margin: 1.5em;
+    padding: 1px 1px 1px 1px;
+}
+
+.vl1 {
+    border-right: 1px solid #7f7f7f;
+    height: 42px;
+    position: absolute;
+    left: 22%;
+    margin-left: 0px;
+    top: 16%;
+}
+
+.vl2 {
+    border-right: 1px solid #7f7f7f;
+    height: 42px;
+    position: absolute;
+    left: 34.7%;
+    margin-left: 0px;
+    top: 16%;
+}
+
+
+/* Below input.form-control is used for single line input field in bootstrap*/
+
+input[type="text"],
+input.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+input[type="text"]:focus,
+input.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* Below textarea.form-control is used for single line textarea field in bootstrap*/
+
+input[type="text"],
+textarea.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+input[type="text"]:focus,
+textarea.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* Below select.form-control is used for single line select field in bootstrap*/
+
+input[type="text"],
+select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px lightgray;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#subsector {
+    width: 200%;
+    display: hidden;
+    background: transparent;
+    border-top: 1px lightgray;
+    border-left: 1px lightgray;
+    border-right: 1px lightgray;
+    border-color: lightgray;
+}
+
+#country_id {
+    border-bottom: 1px lightgray;
+}
+
+.btn_register {
+    color: #fff;
+    background-color: #0e1d52;
+    letter-spacing: 0.05em;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 250px;
+    height: 45px;
+    background-position: center;
+}
+
+.btn_complete {
+    color: #fff;
+    background-color: #0e1d52;
+    letter-spacing: 0.05em;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 250px;
+    height: 45px;
+    background-position: center;
+}
+
+.btn_next {
+    color: #fff;
+    background-color: #0e1d52;
+    letter-spacing: 0.05em;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 250px;
+    height: 45px;
+    background-position: center;
+}
+
+.btn_save {
+    color: #000;
+    background-color: #fff;
+    letter-spacing: 0.05em;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 250px;
+    height: 45px;
+    background-position: center;
+}
+
+
+/* ALTER TABLE `user_details` ADD `contact_name` TEXT NOT NULL ;
+ */
+
+ /* http://demo.interface.club/limitless/demo/Template/layout_1/LTR/default/full/components_tabs.html */
